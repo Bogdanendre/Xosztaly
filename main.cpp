@@ -4,22 +4,25 @@ using namespace std;
 
 int main()
 {
-    int a,b,c,max=-9999999;
+    int a,b,c,p=1;
     cout<<"a=";
     cin>>a;
     cout<<"b=";
     cin>>b;
     cout<<"c=";
     cin>>c;
-    if(max<a){
-        max=a;
+    if(a%2==0)
+    {
+        p=p * a;
     }
-    if(max<b){
-        max=b;
+    if(b%2==0)
+    {
+        p=p * b;
     }
-    if(max<c){
-        max=c;
+    if(c%2==0)
+    {
+        p=p * c;
     }
-    cout<<max;
+    cout<<"P="<<p;
     return 0;
 }
