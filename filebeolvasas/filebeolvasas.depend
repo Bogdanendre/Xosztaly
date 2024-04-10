@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1712737740 source:d:\xb\filebeolvasas\main.cpp
+	<iostream>
+	<fstream>
+
