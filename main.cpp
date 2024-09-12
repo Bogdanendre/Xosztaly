@@ -4,25 +4,44 @@ using namespace std;
 
 int main()
 {
-    int a,b,c,p=1;
-    cout<<"a=";
-    cin>>a;
-    cout<<"b=";
-    cin>>b;
-    cout<<"c=";
-    cin>>c;
-    if(a%2==0)
+    int m=100;
+    int primszam[m];
+    int index=0;
+    int moderat,szorzat=1,seged;
+    cin>>moderat;
+    for(int szam=2; szam<=m; szam++)
     {
-        p=p * a;
+        bool prim=true;
+        for(int oszto=2; oszto<szam/2+1; oszto++)
+        {
+
+            if(szam%oszto==0)
+            {
+                prim=false;
+            }
+
+        }
+        if(prim==true){
+           primszam[index]=szam;
+           index++;
+        }
+         seged=index;
     }
-    if(b%2==0)
-    {
-        p=p * b;
+    for(int i=0;i<seged;i++){
+       bool szorzat=true;
+        for (int j = i; j <= seged; j++){
+            szorzat=szorzat*primszam[j];
+            if(szorzat!=moderat){
+                szorzat=false;
+            }else{
+                szorzat=true;
+        }
     }
-    if(c%2==0)
-    {
-        p=p * c;
+    if(szorzat==true){
+        cout<<1;
+    }else{
+        cout<<0;
     }
-    cout<<"P="<<p;
     return 0;
+}
 }
