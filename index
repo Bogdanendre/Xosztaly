@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vadászgépek — Főoldal</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Vadászgépek</a>
+      <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="types.html">Típusok</a>
+        <a href="gallery.html">Galéria</a>
+        <a href="about.html">Rólunk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Ismerd meg a modern vadászgépeket</h1>
+      <p>Rövid bemutatók, típusok, műszaki adatok és képgaléria. A weboldal célja bemutató és oktató jellegű tájékoztatás.</p>
+      <p><a class="btn" href="types.html">Nézd meg a típusokat</a></p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h2>Mi a vadászgép?</h2>
+        <p>A vadászgépek olyan katonai repülőgépek, melyeket légifölény biztosítására és légi célok elfogására terveztek.</p>
+      </article>
+      <article class="card">
+        <h2>Generációk</h2>
+        <p>Az első sugárhajtású gépektől a modern, lopakodó ötödik generációig — különböző feladatkörökkel és technológiákkal.</p>
+      </article>
+      <article class="card">
+        <h2>Biztonság</h2>
+        <p>Ez az oldal tájékoztató célú; nem tartalmaz működtetési, gyártási vagy veszélyes információkat.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Vadászgépek — Oktató oldal. Képek: Wikimedia Commons (ha használsz képeket).</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
